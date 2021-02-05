@@ -1,1 +1,60 @@
 \section{Legal issues and GDPR}
+\textbf{Privacy by Design (PbD)} is an approach to system engineering which promotes privacy through out the whole engineering process. In particular, it takes human values into account in a well-defined manner through the whole process, it's not about data protection but designing so data doesn't need protection, and the root principle is based on enabling service without data control transfer from the citizen to the system. The PbD main principles are the following :
+\begin{itemize}
+\item \textbf{Proactive} : it means that we are taking into account privacy from the early beginning of the design phase.
+\item \textbf{Privacy as the default setting} : it means that privacy is taken into account in all the stages of the design.
+\item \textbf{Privacy embedded into design} : the privacy is directly interpreted as a requirement in the specification of the system.
+\item \textbf{Full functionality} : it means that we are improving the quality of our system and not diminishing it (this is also called Positive-sum). So if we increase privacy we decrease security and vice versa (this is also called Zero-sum).
+\item \textbf{End-to-End security} : it's a way for explicitly stating that we are considering the standard privacy principles of security.
+\item \textbf{Visibility and transparency} : it means that we reveal whatever it's necessary to the users.
+\item \textbf{Respect for user privacy} : it means that most the information that are collected is done focusing on the users (User centricity).
+\end{itemize}
+According to PbD supporters data minimization is the most important safeguard in protecting personally identifiable information and the use of cryptography, de-identification techniques and data aggregation are absolutely critical. PbD has been critiqued as "vague" and leaving "many open questions" about their application when engineering systems. It has also been pointed out that PbD is similar to voluntary compliance. The major limitations of this approach are :
+\begin{itemize}
+\item Current definitions of privacy by design do not address the methodological aspect of system engineering that we should use to implement that.
+\item The concept also does not focus on the role of the actual data holder, but on that of the system designer. This role is not known in privacy law, so the concept of Privacy by Design is not based in law. This in turn undermines the trust by data subjects, data holders and policy makers.
+\end{itemize}
+The European Commission in January $2012$ presented a proposal to ensure a coherent framework and a harmonized system in EU matters. It consists of two different tools :
+\begin{itemize}
+\item a proposal for a regulation concerning "the protection of individuals with regard to the processing of personal data and the free movement of such data", aimed at regulating the processing of personal data in both the private and public sector.
+\item a proposal for a directive addressed to the regulation of prevention, conflict and repression of crimes, and to the enforcement of criminal penalties.
+\end{itemize}
+The legislative process for such proposal has been concluded in $2016$ and it will be enforced starting from $2018$. This proposal goes under the name of \textbf{General Data Protection Regulations (GDPR)}. In the GDPR we can distinguish between two roles : \textbf{data controller}, which is the person or body that, alone or jointly with others, determines the purpose and means of the processing of personal data, and \textbf{data processor}, which is a legal person or body which processes personal data on behalf of the controller. In particular, the data processing must comply with the $6$ general GDPR principles :
+\begin{itemize}
+\item \textbf{Lawfulness, fairness and transparency}
+\item \textbf{Purpose limitation} : it means that personal data must be collected for specified, explicit and legitimate purposes and not further processed in a manner that is incompatible with those purposes.
+\item \textbf{Retention} : it means that personal data must be kept in an identifiable format only for as long as necessary. We need to be clear about the length of time data will be kept and reason for same.
+\item \textbf{Integrity and confidentiality} : the personal data must be kept secure, in such a way that it doesn't permit unauthorized access, intentionally or accidentally.
+\item \textbf{Data minimization} : the personal data must be adequate, relevant and limited to achieve the purpose.
+\item \textbf{Accuracy} : the personal data must be accurate and up to date. The longer personal data is held, the more likely it will be inaccurate/out-of-date. For this reason, staff must ensure that local procedures are in place to ensure high levels of data accuracy, including periodic review and audit.
+\end{itemize}
+An important aspect is that if the data is anonymized, then GDPR doesn't apply. Instead, if the data is pseudonymized then GDPR does apply. GDPR requires businesses to implement "technical and organizational measures to provide appropriate protection to the personal data they hold". This requires to secure the Personal Identifiable Information (PII) and Personal Health Information (PHI) to prevent unauthorized access such that in case of unauthorized access the data they get is unintelligible. To reach this goal typically companies uses several measures such as encryption in order to guarantee an appropriate level of security. In particular, GDPR expressly states that such measures include :
+\begin{itemize}
+\item The \textbf{pseudonymization} and \textbf{encryption} of personal data.
+\item Measures to ensure resilience of systems and services processing data.
+\item Measures that allows businesses to restore the availability and access to the data in the event of a breach.
+\item Frequent testing of the effectiveness of the security measures.
+\end{itemize}
+When encrypting personal data, in accordance with Article $4$ No. $5$ GDPR, the encryption key is the "additional information" which is "kept separately" and "subject to technical and organizational measures". Thus the safety measures must ensure that the personal data are not attributed to an identifiable natural person. GDPR includes a definition of "pseudonymization". According to Article $4$ No. $5$ GDPR, pseudonymization means the processing of personal data in such a way that the personal data can no longer be attributed to a specific data subject without the use of additional information, provided that such additional information is kept separately and is subject to technical and organizational measure to ensure that the personal data are not attributed to an identifiable natural person. Indeed, pseudonymization shall, like encryption, be one of the "appropriate safeguards" of Article $6$ Par. $4 (e)$ GDPR. The pseudonymization main limitations are the following : implements methodologies to guarantee pseudonymization might lead to a huge cost, since to manage them is typically required a qualified staff, and there not exist a default method to guarantee pseudonymization. The GDPR main key implications are the following :
+\begin{itemize}
+\item \textbf{Increased fines} : if one or more rules defines by GDPR are not satisfied by a company, then the regulators can imposes fines of up to $4 \%$ of the company annual turnover. In this case, regulators may perform audits, issue warnings or a temporary ban on processing.
+\item \textbf{Proof of compliance} : it means that companies must demonstrate they are compliant by : evidencing that they comply the $6$ GDPR principles and processing conditions,documenting suitable policies that set out how they process personal data, performing Privacy Impact Assessments and implementing technical security measures.
+\item \textbf{New rights} : this section contains several rights such as right to be forgotten, to data portability, to access and rectify personal data within $30$ days, etc.
+\item \textbf{Privacy by Design, Privacy by Default} : it's mandatory to implement Pivacy by Design to ensure privacy and data protection is a key consideration during the entire life cycle of any project. Privacy by Default means to consider privacy as the default setting and directly embedded into the design.
+\item \textbf{Data Protection Officers (DPO)} : it's the authority that send reports to highest levels of managements and it's mandatory in certain cases.
+\item \textbf{Privacy Impact Assessments (PIA)} : It's mandatory for high risk personal data processing and in some cases consulting the supervisory authority is required.
+\item \textbf{Privacy notices} : It provides an increase of mandatory amount of information included in privacy notices and it's supplied to the individual at the time they provide personal data. If processing is for a new purpose then a prior notification must be given. It must be concise, transparent, intelligible and easily accessible.
+\item \textbf{Consent} : Consent must be freely given, specific, informed and unambiguous. It may be withdrawn at any time and must be explicit for sensitive personal data or for data transfer outside the EU.
+\item \textbf{Mandatory breach notifications} : whenever a data breach occurs then they must notify the interested users within a specified time window.
+\item \textbf{Obligations for data processors} : they are new obligations for data processors in order to be more responsible and liable.
+\item \textbf{Extra-territorial scope} : the GDPR applies to data controllers and processors established in the EU and organizations that target EU citizens.
+\end{itemize}
+The GDPR defines the following characteristics of the regulations for privacy for individuals :
+\begin{itemize}
+\item \textbf{easier access to your own data} : it means that individuals will have more information on how their data is processed and this information should be available in a clear and understandable way.
+\item \textbf{a right to data portability} : it means that will be easier to transfer your personal data between service providers.
+\item \textbf{a "right to be forgotten"} : when you no longer want your data to be processed, and provided that there are no legitimate grounds for retaining it, the data will be deleted.
+\item \textbf{the right to know when your data has been hacked} : it means that companies and organizations must notify the national supervisory authority of serious data breaches as soon as possible so that users can take appropriate measures.
+\item \textbf{Data protection by design and by default} : the first one requires that data protection is designed into the development of business processes for products and services. Whereas the second one means that the default settings should be those that provide the most privacy.
+\item \textbf{Stronger enforcement of the rules} : it means that data protection authorities will be able to fine companies who do not comply with EU rules up to $4 \%$ of their global annual turnover.
+\end{itemize}
